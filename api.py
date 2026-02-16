@@ -50,7 +50,6 @@ class MapViewer(QWidget):
         self.zoom = max(0, min(MAX_ZOOM, int(SCALE_CONVERSION * scale_percent)))
 
     def fetch_map_image(self):
-        """Запрос и сохранение изображения карты."""
         map_url = (
             f"https://static-maps.yandex.ru/v1"
             f"?apikey={API_KEY_STATIC}"
