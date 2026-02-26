@@ -5,7 +5,6 @@ from typing import Optional, Tuple
 
 
 class MapService:
-    
     BASE_URL = "https://static-maps.yandex.ru/v1"
     
     def __init__(self, api_key: str, screen_width: int = 600, screen_height: int = 450):
